@@ -1,13 +1,176 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+ 
+}
+body{
+  background-image: url('https://formeinfullbloom.files.wordpress.com/2019/03/pneverlandep918.png');
+  background-repeat: repeat-y;
+  background-position: inherit;
+  object-fit: cover;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+ 
+}
+button{
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Card {
+  width:100%;
+  max-width: 290px;
+  height: 300px;
+  background-color:rgb(204, 204, 204, 0.7);
+  margin:20px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 20px darkgrey;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  
 }
+.Card iframe{
+  width: 100%;
+  max-width: 300px;
+ position: absolute;
+ margin-top: 300px;
+ margin-left: -90px;
+ object-fit: cover;
+ border: 0;
+
+}
+.Card P{
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+
+.Card img{
+  width: 100%;
+  max-width: 70px;
+  height: auto;
+  margin-right: auto;
+  margin-left: 8px;
+  transition: 0.3s all;
+  transform: scale(1);
+  
+  
+}
+
+
+.Card img:hover{
+  transform: scale(1.1);
+}
+
+.Card .Infos{
+  width: 500px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: 2px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+.Name, .Age, .Anime{
+  width: 100%;
+  max-width: 200px;
+  text-align: justify;
+ 
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 3px;
+}
+
+.filtro{
+  width: 100%;
+  max-width: 500px;
+  overflow-x: hidden;
+ 
+}
+
+.filtro input{
+  width: 100%;
+  max-width: 180px;
+  height: 30px;
+  border-radius: 4px;
+  border: 0;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  background-color:rgb(204, 204, 204, 0.7);
+ 
+}
+.filtro button{
+  width: 100%;
+  max-width: 95px;
+  height: 28px;
+  font-size: 11px;
+  font-weight: bold;
+  border: 0;
+  padding: 5px;
+  background-color:rgb(204, 204, 204, 0.7);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filtro input:focus{
+  border: 0px;
+}
+.filtro input ::placeholder{
+  color: #ccc;
+}
+
+
+
+
+
+@media only screen and (min-width:768px){
+  .Card {
+    width:100%;
+    max-width:650px;
+    height: 150px;
+    background-color:rgb(204, 204, 204, 0.7);
+    margin:20px 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 20px darkgrey;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+   
+    
+  }
+
+  .Card iframe{
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -10px;
+    border: 0;
+   }
+   body{
+    background-image: url('https://formeinfullbloom.files.wordpress.com/2019/03/pneverlandep918.png');
+    
+    background-position: inherit;
+    object-fit: cover;
+  }
+
+}
+
